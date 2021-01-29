@@ -33,6 +33,7 @@ const appRoutes: Routes = [
   {path: 'formateurs',component:FormateursComponent},
   { path: '', redirectTo: '/list', pathMatch: 'full' },
   {path: 'participants', component: ParticipantssComponent},
+  
   { path: '**', component: PagenotfoundComponent }
   
   ];

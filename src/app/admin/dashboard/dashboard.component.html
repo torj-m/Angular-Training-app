@@ -9,25 +9,18 @@
         <mat-card style="background-color:#00b050;">
             <img src="../../../assets/Participants.png" height="190px">
             <p>
-                <b>50</b> <br> <br> Participants
+                <b>{{nbpart}}</b> <br> <br> Participants
             </p>
         </mat-card>
         <mat-card style="background-color:#7030a0;">
             <img src="../../../assets/formateur.png" height="180px">
             <p>
-                <b>3</b> <br> <br> Formateurs
+                <b>{{nbform}}</b> <br> <br> Formateurs
             </p>
         </mat-card>
     </div>
     <div id="table-container">
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z0">
-
-            <!--- Note that these columns can be defined in any order.
-          The actual rendered columns are set as a property on the row definition" -->
-
-
-
-            <!-- Name Column -->
             <ng-container matColumnDef="Track">
                 <th mat-header-cell *matHeaderCellDef> Track </th>
                 <td mat-cell *matCellDef="let element"> {{element.Track}} </td>

@@ -8,10 +8,12 @@ import { FakeparticipantServiceService } from '../fakeparticipant-service.servic
 export class ParticipantssComponent implements OnInit {
 participantItems
   constructor(private participantItemService: FakeparticipantServiceService) { }
-
+  nbpart: number;
+  
   ngOnInit(): void {
     this.participantItems=this.participantItemService.get();
     console.log(this.participantItems);
+    
   }
 
 }

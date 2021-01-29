@@ -1,7 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Participant } from 'src/app/participant';
-import { ParticipantsITEMS } from 'src/app/participants';
-import { FakeparticipantServiceService } from '../fakeparticipant-service.service';
+  import { FakeparticipantServiceService } from '../fakeparticipant-service.service';
 
 @Component({
   selector: 'app-participant-item',
