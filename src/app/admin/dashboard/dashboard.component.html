@@ -39,8 +39,8 @@
 
             <th>Top Formateurs</th>
             <td></td>
-            <tr><img src="../../../assets/TOPF.png" height="30px">Nom & Prénom </tr>
-            <tr><img src="../../../assets/TOPF.png" height="30px">Nom & Prénom </tr>
+            <tr *ngFor = "let f of listform"><img src="../../../assets/TOPF.png" height="30px">{{f.nom}}  {{f.prenom}}</tr>
+            
 
 
         </table>

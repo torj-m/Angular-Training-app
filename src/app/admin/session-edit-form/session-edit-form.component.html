@@ -1,7 +1,7 @@
 <header>
     <h2>Modifier une session de formation</h2>
-    </header>
-    <form #sessionItemForm="ngForm" (ngSubmit)="editSession(sessionItemForm.value)">
+</header>
+<form #sessionItemForm="ngForm" (ngSubmit)="editSession(sessionItemForm.value)">
     <ul>
     <li>
     <label for="name">Name</label>
@@ -38,4 +38,4 @@
         </ul>
         <button type="submit"
         [disabled]="!sessionItemForm.form.valid">Modifier</button>
-        </form>
+</form>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FakeFormateurServiceService} from '../fake-formateur-service.service';
 
 @Component({
   selector: 'app-formateur-edit-form',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormateurEditFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(private formateurItemService: FakeFormateurServiceService) { }
 
   ngOnInit(): void {
   }
-
+  addFormateur(formateurItem) {
+    console.log(formateurItem);
+    this.formateurItemService.add(formateurItem);
+  }
+  
 }

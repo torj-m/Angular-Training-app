@@ -9,6 +9,7 @@
         <mat-list-item *ngFor="let participan of participantItems">
             <div>
                 {{participan.nom}} {{participan.prenom}} {{participan.Adresse}} {{participan.Email}}
+                <a (click)="edit()"> <img src="../../assets/update.png" class="iconsup" /></a><a (click)="onDelete()"> <img  src="../../assets/delete.png" class="icon"/></a>
             </div>
         </mat-list-item>
 

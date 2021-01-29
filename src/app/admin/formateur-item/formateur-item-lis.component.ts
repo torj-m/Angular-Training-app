@@ -7,14 +7,17 @@ import { FakeFormateurServiceService } from '../fake-formateur-service.service';
   styleUrls: ['./formateur-item-lis.component.css']
 })
 export class FormateurItemLisComponent implements OnInit {
-@Input() formateur: any;
+@Input() formateur: any; 
   constructor(private foarmateurItemService: FakeFormateurServiceService) { }
 
   ngOnInit(): void {
   }
   onDelete()
   {
-this.foarmateurItemService.delete(this.formateur);
+    this.foarmateurItemService.delete(this.formateur);
   }
-
+  editFormateur(){
+    this.foarmateurItemService.edit(this.formateur);
+  }
 }
+

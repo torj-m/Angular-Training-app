@@ -25,5 +25,4 @@ export class SessionEditFormComponent implements OnInit {
   editSession(sessionItem) {
   console.log(sessionItem);
   }
-
 }
