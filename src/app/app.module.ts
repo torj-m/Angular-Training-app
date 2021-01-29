@@ -18,6 +18,7 @@ import {MatInputModule} from '@angular/material/input';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {FormateursComponent} from './admin/formateur/formateurs.component';
 import { FormateurAddFormComponent } from './admin/formateur-add-form/formateur-add-form.component';
+import { ParticipantssComponent } from './admin/participantss/participantss.component';
 const appRoutes: Routes = [
   
   {
@@ -31,7 +32,9 @@ const appRoutes: Routes = [
   {path: 'addformateur', component: FormateurAddFormComponent},
   {path: 'formateurs',component:FormateursComponent},
   { path: '', redirectTo: '/list', pathMatch: 'full' },
+  {path: 'participants', component: ParticipantssComponent},
   { path: '**', component: PagenotfoundComponent }
+  
   ];
 @NgModule({
   declarations: [
@@ -40,7 +43,8 @@ const appRoutes: Routes = [
     SessionItemListComponent,
     InscriptionDisabledDirective,
     PagenotfoundComponent,
-    DashboardComponent  ],
+    DashboardComponent  
+  ],
   imports: [RouterModule.forRoot(
     appRoutes,
     { enableTracing: true }

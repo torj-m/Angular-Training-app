@@ -13,7 +13,7 @@ export class FakeparticipantServiceService {
     ParticipantsITEMS.push(participantItem);
     }
 
-    delete(participantItem) {
+  delete(participantItem) {
       let index;
       index = ParticipantsITEMS.indexOf(participantItem);
       if (ParticipantsITEMS.indexOf(participantItem) >= 0) {
@@ -21,7 +21,7 @@ export class FakeparticipantServiceService {
       }
       }
 
-      getSession(id: number) {
+  getSession(id: number) {
         return ParticipantsITEMS[id - 1];
         }
 }

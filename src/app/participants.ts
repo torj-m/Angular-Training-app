@@ -22,4 +22,4 @@ export const ParticipantsITEMS: Participant[] = [
      Adresse: "la mer",
      Email: "who@gmail.com",
     }
-]
+];

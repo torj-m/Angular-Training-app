@@ -10,5 +10,4 @@ export class InscriptionDisabledDirective {
   this.status = value;
   }
   constructor() { }
-
 }

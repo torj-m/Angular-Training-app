@@ -9,10 +9,8 @@
     <a class="delete" (click)="onDelete()">
     Supprimer
   </a>
-    <a [appInscriptionDisabled]="session.isCompleted" class="inscrire" (click)="inscrire()">
+    <a class="inscrire" [appInscriptionDisabled]="session.isCompleted" (click)="inscrire()">
     S'inscrire
   </a>
-    <a [routerLink]="['../edit', session.id]" routerLinkActive="active" class="inscrire">
-Modifier
-</a>
+    <a class="inscrire" [routerLink]="['../edit', session.id]" routerLinkActive="active">Modifier</a>
 </div>

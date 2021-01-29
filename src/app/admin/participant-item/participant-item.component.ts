@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Participant } from 'src/app/participant';
+import { ParticipantsITEMS } from 'src/app/participants';
 import { FakeparticipantServiceService } from '../fakeparticipant-service.service';
 
 @Component({
@@ -9,8 +11,10 @@ import { FakeparticipantServiceService } from '../fakeparticipant-service.servic
 export class ParticipantItemComponent implements OnInit {
 @Input() participant: any;
   constructor(private ParticipantItemService: FakeparticipantServiceService) { }
-
+  nbrpart: number;
+  partlist: any;
   ngOnInit(): void {
+    
   }
   onDelete(){
     this.ParticipantItemService.delete(this.participant);

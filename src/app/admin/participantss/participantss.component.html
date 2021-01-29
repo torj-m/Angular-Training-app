@@ -1,8 +1,16 @@
 <section>
-    <!-- <a routerLink="/addformateur"> <img src='../../../assets/Ajouter.png' width="40px"></a>-->
+    <a routerLink="/addformateur"> <img src='../../../assets/Ajouter.png' width="40px"></a>
     <mat-list>
-        <h2>Liste Des Formateurs</h2>
-        <app-formateur-item-lis *ngFor="let formateurItem of formateurItems" [formateur]="formateurItem"></app-formateur-item-lis>
-        <app-participant *ngFor="let participantItem of participantItems" [participant]="participantItem"></app-participant-item-lis>
+        <h2>Liste Des Participants</h2>
+
+
+
+
+        <mat-list-item *ngFor="let participan of participantItems">
+            <div>
+                {{participan.nom}} {{participan.prenom}} {{participan.Adresse}} {{participan.Email}}
+            </div>
+        </mat-list-item>
+
     </mat-list>
 </section>
